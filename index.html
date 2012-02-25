@@ -6,7 +6,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>
     var baseUrl = 'https://www.googleapis.com/calendar/v3/users/me/';
-    var end = '?pp=1&key=AIzaSyD6jfPPmLp0zruUdCy2HA4XopM_HO7j4kU';
+    var end = '?pp=1&key=AIzaSyD6jfPPmLp0zruUdCy2HA4XopM_HO7j4kU&access_token=';
 
     function auth() {
         var config = {
@@ -20,7 +20,7 @@
 
 			// validate token
 
-			$.get(baseUrl + 'calendarList?access_token=' + token.access_token, function(data){
+			$.get(baseUrl + 'calendarList' +end + token.access_token, function(data){
 				if (!data)
 					//error
 
