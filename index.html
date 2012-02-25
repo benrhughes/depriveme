@@ -1,0 +1,63 @@
+<html>
+  <head>
+  	<title>DepriveMe - Absence makes the heart grow fonder</title>
+  	<script type="text/javascript" src="./underscore-min.js"></script>
+    <script src="https://apis.google.com/js/client.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+    var baseUrl = 'https://www.googleapis.com/calendar/v3/users/me/';
+    var end = '?pp=1&key=AIzaSyD6jfPPmLp0zruUdCy2HA4XopM_HO7j4kU';
+
+    function auth() {
+        var config = {
+          	'client_id': '839550991886.apps.googleusercontent.com',
+          	'scope': 'https://www.googleapis.com/auth/calendar'
+        };
+
+        gapi.auth.authorize(config, function() {
+			console.log('login complete');
+			var token = gapi.auth.getToken();
+
+			// validate token
+
+			$.get(baseUrl + 'calendarList?access_token=' + token.access_token, function(data){
+				if (!data)
+					//error
+
+				var depriveCal = _.find(data.items, function(item){ return item.summary == 'DepriveMe'; });
+
+				if(!depriveCal)
+					alert("There's no DepriveMe calendar, lets create it");
+
+			});
+        });
+    }
+    </script>
+  </head>
+
+  <body>
+  	<div id="title">
+  		<h2>DepriveMe</h2>
+  	</div>
+  	<div id="welcome">
+  		<p>DepriveMe</p>
+    	<button onclick="auth();">Authorize Google Calendar Access</button>
+    </div>
+    <div id="huh">
+    	For a while I've been experimenting with taking a 24hr break from the things in my life that I enjoy or 
+		depend on. I've found that it is a great way to increase the appreciation of what I have. Plus it help me 
+		become less attached to material things.
+    	<br />
+		DepriveMe is a simple tool I wrote to help me keep this organised. Randomising it makes it a bit more fun, too. 
+		It works like this:
+		<ul>
+			<li>If it doesn't already exist, a 'DepriveMe' calendar is created in your Google Calandar</li>
+			<li>You enter a list of things you'd like to take a scheduled break from. My list includes: coffee; food;
+				hot showers; my smartphone and music</li>
+			<li>You specify how long a period you want the list spread across</li>
+			<li>DepriveMe randomly, but somewhat evenly distributes new events each item across the time period</li>
+		</ul>
+
+    </div>
+  </body>
+</html>
