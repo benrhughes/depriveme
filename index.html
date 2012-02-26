@@ -1,36 +1,30 @@
 <html>
   <head>
-  	<title>DepriveMe - Absence makes the heart grow fonder</title>
-  	<script type="text/javascript" src="./underscore-min.js"></script>
-    <script src="https://apis.google.com/js/client.js"></script>
+  	<title>Deprive Me - Absence makes the heart grow fonder</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  	<script type="text/javascript" src="./underscore-min.js"></script>
     <script type="text/javascript">
 		var clientId = '839550991886';
-
 		var apiKey = 'AIzaSyD6jfPPmLp0zruUdCy2HA4XopM_HO7j4kU';
-
-		// To enter one or more authentication scopes, refer to the documentation for the API.
 		var scopes = 'https://www.googleapis.com/auth/calendar';
 
-		// Use a button to handle authentication the first time.
-		function handleClientLoad() {
+		// function checkAuth() {
+		// 	gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: true}, handleAuthResult);
+		// }
+
+		function handleClientLoad(){
 			gapi.client.setApiKey(apiKey);
-			window.setTimeout(checkAuth,1);
 		}
-
-		function checkAuth() {
-			gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: true}, handleAuthResult);
-		}
-
 
 		function handleAuthResult(authResult) {
 			if (authResult) {
-				$('#auth').hide();
+				$('#auth').disable();
 			  	makeApiCall();
 
 			} else {
-			  $('#auth').show();
+				alert('Something went wrong, please try again');
 			}
+			  	$('#auth').enable();
 		}
 
 		function handleAuthClick(event) {
@@ -38,7 +32,6 @@
 			gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: false}, handleAuthResult);
 		}
 
-		// Load the API and make an API call.  Display the results on the screen.
 		function makeApiCall() {
 			gapi.client.load('calendar', 'v3', function() {
 			  	var request = gapi.client.calendar.calendarList.list();
@@ -55,24 +48,70 @@
 			});
 		}
 
-		handleClientLoad();
+		function addRow(val){
+			var rowHtml = '<tr> \
+  					<td><input type="text" class="item" value="' + (val || "") + '" /></td> \
+  					<td> \
+  						<input type="checkbox" checked="true" class="sun">S</input> \
+  						<input type="checkbox" checked="true" class="mon">M</input> \
+  						<input type="checkbox" checked="true" class="tue">T</input> \
+  						<input type="checkbox" checked="true" class="wed">W</input> \
+  						<input type="checkbox" checked="true" class="thu">T</input> \
+  						<input type="checkbox" checked="true" class="fri">F</input> \
+  						<input type="checkbox" checked="true" class="sat">S</input> \
+  					</td> \
+  				</tr>';
+
+			$('#items tbody:last').append(rowHtml);
+
+		}
+
+		$(document).ready(function(){
+			$('#huh').hide();
+
+			addRow('internet, food, music...');
+
+			$('#showHuh').click(function(e){
+				e.preventDefault();
+				$('#huh').show();
+			});
+
+
+			$('#hideHuh').click(function(e){
+				e.preventDefault();
+				$('#huh').hide();
+			});
+		});
     </script>
+    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
 
   </head>
 
   <body>
   	<div id="title">
-  		<h2>DepriveMe</h2>
+  		<h2>Deprive Me</h2>
+  		<h4>Absence makes the heart grow fonder</h4>
+  		<a href="#" id="showHuh">Huh?</a>
   	</div>
-  	<div id="welcome">
-  		<p>DepriveMe</p>
-    	<button onclick="handleAuthClick();" id="auth">Authorize Google Calendar Access</button>
+  	<div id="data">
+  		Over next next <input type="text" id="numberOfDats"/> days, randomly deprive me of:
+  		<br/>
+  		<table id="items">
+  			<thead>
+  				<th></th>
+  				<th></th>
+  			</thead>
+  			<tbody>
+  			</tbody>
+  		</table>
+  		<button onclick="addRow()">+</button>
+    	<button onclick="handleAuthClick();" id="auth">Add Events</button>
     </div>
     <div id="huh">
     	For a while I've been experimenting with taking a 24hr break from the things in my life that I enjoy or 
-		depend on. I've found that it is a great way to increase the appreciation of what I have. Plus it help me 
+		depend on. I've found that it is a great way to increase my appreciation of what I have. Plus it help me 
 		become less attached to material things.
-    	<br />
+    	<br /><br />
 		DepriveMe is a simple tool I wrote to help me keep this organised. Randomising it makes it a bit more fun, too. 
 		It works like this:
 		<ul>
@@ -82,7 +121,7 @@
 			<li>You specify how long a period you want the list spread across</li>
 			<li>DepriveMe randomly, but somewhat evenly distributes new events each item across the time period</li>
 		</ul>
-
+		<a href="#" id="hideHuh">Hide</a>
     </div>
   </body>
 </html>
