@@ -29,11 +29,6 @@
 			  	$('#auth').enable();
 		}
 
-		function handleAuthClick(event) {
-			event.preventDefault();
-			gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: false}, handleAuthResult);
-		}
-
 		function makeApiCall() {
 			gapi.client.load('calendar', 'v3', function() {
 			  	var request = gapi.client.calendar.calendarList.list();
@@ -118,7 +113,7 @@
 
 			$('#data').submit(function(e){
 				e.preventDefault();
-				handleAuthClick();
+				gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: false}, handleAuthResult);
 			});
 		});
     </script>
