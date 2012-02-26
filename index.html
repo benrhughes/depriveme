@@ -42,7 +42,7 @@
 		function makeApiCall() {
 			gapi.client.load('calendar', 'v3', function() {
 			  	var request = gapi.client.calendar.calendarList.list();
-			  	request.execute(function(resp) {
+			  	request.execute(function(data) {
 		    		if (!data)
 					//error
 
@@ -50,7 +50,7 @@
 
 					if(!depriveCal)
 						alert("There's no DepriveMe calendar, lets create it");
-					
+
 		  		});
 			});
 		}
