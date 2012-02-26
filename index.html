@@ -8,6 +8,8 @@
 		var apiKey = 'AIzaSyD6jfPPmLp0zruUdCy2HA4XopM_HO7j4kU';
 		var scopes = 'https://www.googleapis.com/auth/calendar';
 
+		var depriveCal = null;
+
 		// function checkAuth() {
 		// 	gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: true}, handleAuthResult);
 		// }
@@ -32,28 +34,28 @@
 			gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: false}, handleAuthResult);
 		}
 
-		function makeApiCall(data) {
+		function makeApiCall() {
 			gapi.client.load('calendar', 'v3', function() {
 			  	var request = gapi.client.calendar.calendarList.list();
 			  	request.execute(function(res) {
 		    		if (!res)
 					//error
 
-					var depriveCal = _.find(res.items, function(item){ return item.summary == 'DepriveMe'; });
+					depriveCal = _.find(res.items, function(item){ return item.summary == 'DepriveMe'; });
 
 					if(depriveCal)
-						addEntries(data);
+						addEntries();
 					else
 						createCalendar()
 		  		});
 			});
 		}
 
-		function addEntries(data){
-
+		function addEntries(){
+			var data = getFormData();
 		}
 
-		function createCalendar(data){
+		function createCalendar(){
 			var req = gapi.client.calendar.calendars.insert(
 				{
 					"summary":"DepriveMe", 
@@ -64,7 +66,7 @@
 				if (!res)
 					//error
 
-				addEntries(data);
+				addEntries();
 
 			});
 		}
@@ -87,6 +89,15 @@
 
 		}
 
+		function getFormData(){
+			var values = {};
+			$.each($('#data').serializeArray(), function(i, field) {
+			    values[field.name] = field.value;
+			});
+
+			return values;
+		}
+
 		$(document).ready(function(){
 			$('#huh').hide();
 
@@ -107,13 +118,7 @@
 
 			$('#data').submit(function(e){
 				e.preventDefault();
-
-				var values = {};
-				$.each($('#data').serializeArray(), function(i, field) {
-				    values[field.name] = field.value;
-				});
-
-				makeApiCall(values);
+				handleAuthClick();
 			});
 		});
     </script>
