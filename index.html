@@ -20,7 +20,8 @@
 
 			// validate token
 
-			$.get(baseUrl + 'calendarList' +end + token.access_token, function(data){
+			//$.get(baseUrl + 'calendarList' +end + token.access_token, function(data){
+			$.get(baseUrl + 'calendarList' +end , function(data){	
 				if (!data)
 					//error
 
