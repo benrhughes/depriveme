@@ -20,13 +20,13 @@
 
 		function handleAuthResult(authResult) {
 			if (authResult) {
-				$('#auth').disable();
+				$('#submit').disable();
 			  	makeApiCall();
 
 			} else {
 				alert('Something went wrong, please try again');
 			}
-			  	$('#auth').enable();
+			  	$('#submit').enable();
 		}
 
 		function makeApiCall() {
@@ -140,7 +140,7 @@
   		</table>
   		<button onclick="addRow()">+</button>
     	<!-- <button onclick="handleAuthClick();" id="auth">Add Events</button> -->
-    	<input type="submit" value="Add to Google Calendar" />
+    	<input id="submit" type="submit" value="Add to Google Calendar" />
    	</form>
     <div id="huh">
     	For a while I've been experimenting with taking a 24hr break from the things in my life that I enjoy or 
