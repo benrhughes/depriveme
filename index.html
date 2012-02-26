@@ -20,13 +20,13 @@
 
 		function handleAuthResult(authResult) {
 			if (authResult) {
-				$('#submit').disable();
+				$('#submit').prop('disabled', true);
 			  	makeApiCall();
 
 			} else {
 				alert('Something went wrong, please try again');
 			}
-			  	$('#submit').enable();
+			  	$('#submit').prop('disabled', false);
 		}
 
 		function makeApiCall() {
