@@ -49,9 +49,13 @@
 			var data = getFormData();
 			alert("adding entries");
 
-			var req = gapi.client.calendar.events.insert(
-				{"summary" : "Test Entry", "start" : "2012-02-27"},
-				 depriveCal.id);
+			var params = {
+					"summary" : "Test Entry", 
+					"start" : "2012-02-27",
+					"calendarId" : depriveCal.id;
+				};
+
+			var req = gapi.client.calendar.events.insert(params, depriveCal.id);
 
 			req.execute(function(res){
 				if (res)
