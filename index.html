@@ -10,10 +10,6 @@
 
 		var depriveCal = null;
 
-		// function checkAuth() {
-		// 	gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: true}, handleAuthResult);
-		// }
-
 		function handleClientLoad(){
 			gapi.client.setApiKey(apiKey);
 		}
@@ -34,9 +30,9 @@
 			  	var request = gapi.client.calendar.calendarList.list();
 			  	request.execute(function(res) {
 		    		if (!res)
-						alert("error");
+						return alert("error");
 
-					var depriveCal = _.find(res.items, function(item){ return item.summary == 'DepriveMe'; });
+					depriveCal = _.find(res.items, function(item){ return item.summary == 'DepriveMe'; });
 
 					if(depriveCal){
 						alert("Found calendar");
@@ -52,6 +48,10 @@
 		function addEntries(){
 			var data = getFormData();
 			alert("adding entries");
+
+			gapi.client.calendar.events.insert(
+				{"summary" : "Test Entry", "start" : "2012-02-27"},
+				 depriveCal.id);
 		}
 
 		function createCalendar(){
@@ -64,7 +64,7 @@
 
 			req.execute(function(res){
 				if (!res)
-					alert("error");
+					return alert("error");
 
 				addEntries();
 
