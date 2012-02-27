@@ -34,7 +34,7 @@
 			  	var request = gapi.client.calendar.calendarList.list();
 			  	request.execute(function(res) {
 		    		if (!res)
-					//error
+						alert("error");
 
 					var depriveCal = _.find(res.items, function(item){ return item.summary == 'DepriveMe'; });
 
@@ -64,7 +64,7 @@
 
 			req.execute(function(res){
 				if (!res)
-					//error
+					alert("error");
 
 				addEntries();
 
