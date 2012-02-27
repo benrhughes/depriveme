@@ -36,7 +36,7 @@
 		    		if (!res)
 					//error
 
-					depriveCal = _.find(res.items, function(item){ return item.summary == 'DepriveMe'; });
+					var depriveCal = _.find(res.items, function(item){ return item.summary == 'DepriveMe'; });
 
 					if(depriveCal){
 						alert("Found calendar");
