@@ -60,7 +60,7 @@
 					"calendarId" : depriveCal.id
 				};
 
-			var req = gapi.client.calendar.events.insert(depriveCal.id, params);
+			var req = gapi.client.calendar.events.insert(params);
 
 			req.execute(function(res){
 				if (res)
