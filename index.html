@@ -38,16 +38,20 @@
 
 					depriveCal = _.find(res.items, function(item){ return item.summary == 'DepriveMe'; });
 
-					if(depriveCal)
+					if(depriveCal){
+						alert("Found calendar");
 						addEntries();
-					else
+					}
+					else{
 						createCalendar()
+					}
 		  		});
 			});
 		}
 
 		function addEntries(){
 			var data = getFormData();
+			alert("adding entries");
 		}
 
 		function createCalendar(){
