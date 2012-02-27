@@ -53,7 +53,12 @@
 				{"summary" : "Test Entry", "start" : "2012-02-27"},
 				 depriveCal.id);
 
-			req.execute(function(){alert("done");})
+			req.execute(function(res){
+				if (res)
+					alert("done");
+				else
+					alert("error");
+			})
 		}
 
 		function createCalendar(){
