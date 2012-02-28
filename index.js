@@ -57,7 +57,7 @@ function addEntries(){
 	
 		var req = gapi.client.calendar.events.insert(params);
 
-		req.execute();
+		req.execute(function(){return null;});
 
 	};
 }
