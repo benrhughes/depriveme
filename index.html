@@ -23,7 +23,7 @@
 				$('#huh').hide();
 			});
 
-			$('#data').submit(function(e){
+			$('#submit').click(function(e){
 				e.preventDefault();
 				// addEntries();
 				gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: false}, handleAuthResult);
@@ -40,7 +40,7 @@
   		<h4>Absence makes the heart grow fonder</h4>
   		<a href="#" id="showHuh">Huh?</a>
   	</div>
-  	<form id="data">
+  	<div id="data">
   		Over next next <input type="text" id="days" value="30"/> days, randomly deprive me of:
   		<br/>
   		<table id="items">
@@ -53,8 +53,8 @@
   			</tbody>
   		</table>
   		<button onclick="addRow()">+</button>
-    	<input id="submit" type="submit" value="Add to Google Calendar" />
-   	</form>
+    	<button id="submit" >Add to Google Calendar</button>
+   	</div>
     <div id="huh">
     	For a while I've been experimenting with taking a 24hr break from the things in my life that I enjoy or 
 		depend on. I've found that it is a great way to increase my appreciation of what I have. Plus it helps me 
