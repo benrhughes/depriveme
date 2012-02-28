@@ -45,13 +45,15 @@ function addEntries(){
 		var date = new Date();
 		date.setDate(date.getDate() + offset);
 
+		var dateString = date.getFullYear() + '-' + (parseInt(date.getMonth())+1) + '-' + date.getDate();
+
 		var params = {
 			"calendarId" : depriveCal.id,
 			"resource": 
 			{
 				"summary": data.items[i],
-				"start": {"date": date},
-				"end": {"date": date}
+				"start": {"date": dateString},
+				"end": {"date": dateString}
 			}
 		};
 	

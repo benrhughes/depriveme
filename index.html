@@ -25,8 +25,8 @@
 
 			$('#data').submit(function(e){
 				e.preventDefault();
-				//addEntries();
-				gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: false}, handleAuthResult);
+				addEntries();
+				// gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: false}, handleAuthResult);
 			});
 		});
     </script>
