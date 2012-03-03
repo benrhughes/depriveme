@@ -78,7 +78,7 @@ function addEntries(){
 
 		var dateString = date.getFullYear() + '-' + (parseInt(date.getMonth())+1) + '-' + date.getDate();
 
-		showProgress('Adding ' + data.items[i]  + 'on' + dateString);
+		showProgress('Adding ' + data.items[i]  + ' on ' + dateString);
 
 		var params = {
 			"calendarId" : depriveCal.id,
@@ -92,7 +92,13 @@ function addEntries(){
 	
 		var req = gapi.client.calendar.events.insert(params);
 
-		req.execute(function(){return null;});
+		var completed = 0;
+
+		req.execute(function(){
+			completed++;
+			if(completed == date.items.length)
+				showProgress(completed + ' items added');
+		});
 
 	};
 }
