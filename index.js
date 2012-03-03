@@ -96,7 +96,7 @@ function addEntries(){
 
 		req.execute(function(){
 			completed++;
-			if(completed == date.items.length)
+			if(completed == data.items.length)
 				showProgress(completed + ' items added');
 		});
 
