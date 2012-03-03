@@ -6,6 +6,7 @@ var depriveCal = null;
 
 function showProgress(message){
 	$progress =	$('#progress');
+	$progress.show();
 	$progress.text(message);
 }
 
