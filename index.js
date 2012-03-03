@@ -122,6 +122,7 @@ function addRow(val){
 			</tr>';
 
 	$('#items tbody:last').append(rowHtml);
+	$('#items input:last').focus();
 
 }
 
@@ -145,6 +146,8 @@ $(document).ready(function(){
 	addRow('Internet');
 	addRow('Food');
 	addRow('Hot Showers');
+
+	$('#items input:first').focus();
 
 	$('#showHuh').click(function(e){
 		e.preventDefault();
