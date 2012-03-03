@@ -5,9 +5,8 @@ var scopes = 'https://www.googleapis.com/auth/calendar';
 var depriveCal = null;
 
 function showProgress(message){
-	$progress =	$('#progress');
-	$progress.show();
-	$progress.text(message);
+	$('#progress').show();
+	$('#message').text(message);
 }
 
 function handleClientLoad(){
@@ -17,10 +16,10 @@ function handleClientLoad(){
 function handleAuthResult(authResult) {
 
 	if (authResult) {
-		showProgress('Autenticated');
+		showProgress('Authenticated');
 	  	getCalendar();
 	} else {
-		alert('Something went wrong, please try again');
+		showProgress("Couldn't authenticate, please try again");
 	}
 }
 
@@ -77,7 +76,7 @@ function addEntries(){
 		
 		while (offset == 0){
 			var offset = Math.floor(Math.random()*(days+1));
-			if (usedOffsets.indexOf(offset) != -1 && days >= data.items.length) // only look for unique dates if possible
+			if (usedOffsets.indexOf(offset) != -1 && days > data.items.length) // only look for unique dates if possible
 				offset = 0;
 		}
 
@@ -166,9 +165,8 @@ $(document).ready(function(){
 
 	$('#submit').click(function(e){
 		e.preventDefault();
-		showProgress('Autenticating');
+		showProgress('Authenticating with Google');
 
-		// addEntries();
 		gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: false}, handleAuthResult);
 	});
 });
