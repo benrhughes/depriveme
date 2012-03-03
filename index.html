@@ -4,32 +4,6 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   	<script type="text/javascript" src="./underscore-min.js"></script>
    	<script type="text/javascript" src="./index.js"></script>
-    <script type="text/javascript">
-		$(document).ready(function(){
-			$('#huh').hide();
-
-			addRow('Internet');
-			addRow('Food');
-			addRow('Hot Showers');
-
-			$('#showHuh').click(function(e){
-				e.preventDefault();
-				$('#huh').show();
-			});
-
-
-			$('#hideHuh').click(function(e){
-				e.preventDefault();
-				$('#huh').hide();
-			});
-
-			$('#submit').click(function(e){
-				e.preventDefault();
-				// addEntries();
-				gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: false}, handleAuthResult);
-			});
-		});
-    </script>
     <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
 
   </head>
@@ -55,21 +29,24 @@
   		<button onclick="addRow()">+</button>
     	<button id="submit" >Add to Google Calendar</button>
    	</div>
+
+    <div id="progress">
+      <a href="#" id="hideProgress">Close</a>
+    </div>
+    
     <div id="huh">
     	For a while I've been experimenting with taking a 24hr break from the things in my life that I enjoy or 
-		depend on. I've found that it is a great way to increase my appreciation of what I have. Plus it helps me 
-		become less attached to material things.
+		depend on. I've found that it's a great way to increase my appreciation of what I have. Plus it helps me 
+		lessen my attachment to material things.
     	<br /><br />
 		DepriveMe is a simple tool I wrote to help me keep this organised. Randomising it makes it a bit more fun, too. 
 		It works like this:
 		<ul>
-			<li>You enter a list of things you'd like to take a scheduled break from. My list includes: coffee; food;
+			<li>You enter a list of things you'd like to take a scheduled break from. Mine includes: coffee; food;
 				hot showers; my smartphone and music</li>
-			<li>You choose which days are OK for each item. For example, I can only deprive myself of the Internet
-				on the weekend, as I need it for work.</li>
 			<li>You specify how long a period you want the list spread across</li>
 			<li>If it doesn't already exist, a 'DepriveMe' calendar is created in your Google Calandar</li>
-			<li>DepriveMe randomly, but somewhat evenly distributes new events each item across the time period</li>
+			<li>DepriveMe randomly distributes each item across the time period</li>
 		</ul>
 		<a href="#" id="hideHuh">Hide</a>
     </div>
