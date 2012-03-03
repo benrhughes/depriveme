@@ -77,7 +77,7 @@ function addEntries(){
 		
 		while (offset == 0){
 			var offset = Math.floor(Math.random()*(days+1));
-			if (usedOffsets.indexOf(offset) != -1 && days > data.items.length) // only look for unique dates if possible
+			if (usedOffsets.indexOf(offset) != -1 && days >= data.items.length) // only look for unique dates if possible
 				offset = 0;
 		}
 
