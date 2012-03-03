@@ -68,10 +68,20 @@ function createCalendar(){
 function addEntries(){
 	var data = getFormData();
 
-	// TODO: keep track of used offsets - make sure we don't double up
+	var usedOffsets = [];
 	
+	var days = parseInt(data.days);
+
 	for (var i in data.items) {
-		var offset = Math.floor(Math.random()*(parseInt(data.days)+1));
+		var offset = 0;
+		
+		while (offset == 0){
+			var offset = Math.floor(Math.random()*(days+1));
+			if (usedOffsets.indexOf(offset) != -1 && days > data.items.length) // only look for unique dates if possible
+				offset = 0;
+		}
+
+		usedOffsets.push(offset);
 
 		var date = new Date();
 		date.setDate(date.getDate() + offset);
