@@ -66,7 +66,7 @@ function createCalendar(){
 }
 
 function addEntries(){
-	showProgress('Adding items to calendar...');.
+	showProgress('Adding items to calendar...');
 
 	var data = getFormData();
 
