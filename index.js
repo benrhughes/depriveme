@@ -5,7 +5,7 @@ var scopes = 'https://www.googleapis.com/auth/calendar';
 var depriveCal = null;
 
 function showProgress(message){
-	$('#progress').show();
+	$('#progress').jqmShow();
 	$('#message').text(message);
 }
 
@@ -121,10 +121,16 @@ function addRow(val){
 		<tr> \
 			<td> \
 				<input type="text" class="item" value="' + (val || "") + '" /> \
-				</td> \
+			</td> \
+			<td class="add"> \
+				<div id="addButton" class="button"><a href="#" id="addText">+</a></div> \
+			</td> \
 		</tr>';
 
+	$('#items tr:last > td.add:last').text("");
+
 	$('#items tbody:last').append(rowHtml);
+
 	$('#items input:last').focus();
 
 }
@@ -146,6 +152,7 @@ $(document).ready(function(){
 	$('#huh').hide();
 
 	$('#progress').hide();
+	$('#progress').jqm();
 
 	addRow('Internet');
 	addRow('Food');
@@ -155,19 +162,14 @@ $(document).ready(function(){
 
 	$('#showHuh').click(function(e){
 		e.preventDefault();
-		$('#huh').show();
+		$('#huh').jqmShow();
 	});
 
+	$('#huh').jqm();
 
-	$('#hideHuh').click(function(e){
+	$('#addButton').live("click", function(e){
 		e.preventDefault();
-		$('#huh').hide();
-	});
-
-	$('#hideProgress').click(function(e){
-		e.preventDefault();
-		$('#progress').hide();
-
+		addRow();
 	});
 
 	$('#submit').click(function(e){

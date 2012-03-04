@@ -1,0 +1,264 @@
+<mockup version="1.0" skin="sketch" measuredW="2425" measuredH="496" mockupW="2419" mockupH="496">
+  <controls>
+    <control controlID="57" controlTypeID="__group__" x="6" y="0" w="797" h="496" measuredW="797" measuredH="496" zOrder="0" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="797" h="496" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="57"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Title" x="15" y="15" w="-1" h="-1" measuredW="199" measuredH="50" zOrder="1" locked="false" isInGroup="57">
+          <controlProperties>
+            <text>DepriveMe</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::SubTitle" x="47" y="65" w="-1" h="-1" measuredW="411" measuredH="33" zOrder="2" locked="false" isInGroup="57">
+          <controlProperties>
+            <text>Absence%20makes%20the%20heart%20grow%20fonder</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="730" y="15" w="-1" h="-1" measuredW="52" measuredH="27" zOrder="3" locked="false" isInGroup="57">
+          <controlProperties>
+            <menuIcon>false</menuIcon>
+            <text>Huh%3F</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::TextInput" x="260" y="149" w="276" h="-1" measuredW="61" measuredH="27" zOrder="4" locked="false" isInGroup="57">
+          <controlProperties>
+            <text>Internet</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="__group__" x="249" y="107" w="299" h="27" measuredW="299" measuredH="27" zOrder="5" locked="false" isInGroup="57">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="3" w="-1" h="-1" measuredW="90" measuredH="21" zOrder="0" locked="false" isInGroup="5">
+              <controlProperties>
+                <text>Over%20the%20next%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="90" y="0" w="26" h="-1" measuredW="79" measuredH="27" zOrder="1" locked="false" isInGroup="5">
+              <controlProperties>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="123" y="3" w="-1" h="-1" measuredW="176" measuredH="21" zOrder="2" locked="false" isInGroup="5">
+              <controlProperties>
+                <text>days%2C%20randomly%20deprive%20me%20of</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::TextInput" x="260" y="191" w="276" h="-1" measuredW="43" measuredH="27" zOrder="6" locked="false" isInGroup="57">
+          <controlProperties>
+            <text>Food</text>
+          </controlProperties>
+        </control>
+        <control controlID="7" controlTypeID="com.balsamiq.mockups::TextInput" x="260" y="233" w="276" h="-1" measuredW="85" measuredH="27" zOrder="7" locked="false" isInGroup="57">
+          <controlProperties>
+            <text>Hot%20showers</text>
+          </controlProperties>
+        </control>
+        <control controlID="8" controlTypeID="com.balsamiq.mockups::Button" x="548" y="233" w="-1" h="-1" measuredW="33" measuredH="27" zOrder="8" locked="false" isInGroup="57">
+          <controlProperties>
+            <text>+</text>
+          </controlProperties>
+        </control>
+        <control controlID="9" controlTypeID="com.balsamiq.mockups::Button" x="277" y="301" w="-1" h="-1" measuredW="242" measuredH="27" zOrder="9" locked="false" isInGroup="57">
+          <controlProperties>
+            <size>18</size>
+            <text>Add%20to%20my%20Google%20Calendar</text>
+          </controlProperties>
+        </control>
+        <control controlID="10" controlTypeID="__group__" x="638" y="460" w="144" h="21" measuredW="144" measuredH="21" zOrder="10" locked="false" isInGroup="57">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="0" w="-1" h="-1" measuredW="70" measuredH="21" zOrder="0" locked="false" isInGroup="10">
+              <controlProperties>
+                <text>Written%20by%20</text>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Link" x="70" y="0" w="-1" h="-1" measuredW="74" measuredH="21" zOrder="1" locked="false" isInGroup="10">
+              <controlProperties>
+                <text>Ben%20Hughes</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::Canvas" x="809" y="0" w="797" h="496" measuredW="100" measuredH="70" zOrder="1" locked="true" isInGroup="-1"/>
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::Title" x="824" y="15" w="-1" h="-1" measuredW="199" measuredH="50" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>DepriveMe</text>
+      </controlProperties>
+    </control>
+    <control controlID="61" controlTypeID="com.balsamiq.mockups::SubTitle" x="856" y="65" w="-1" h="-1" measuredW="411" measuredH="33" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Absence%20makes%20the%20heart%20grow%20fonder</text>
+      </controlProperties>
+    </control>
+    <control controlID="62" controlTypeID="com.balsamiq.mockups::Button" x="1539" y="15" w="-1" h="-1" measuredW="52" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <menuIcon>false</menuIcon>
+        <state>up</state>
+        <text>Huh%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="63" controlTypeID="com.balsamiq.mockups::TextInput" x="1069" y="149" w="276" h="-1" measuredW="61" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Internet</text>
+      </controlProperties>
+    </control>
+    <control controlID="64" controlTypeID="__group__" x="1058" y="107" w="299" h="27" measuredW="299" measuredH="27" zOrder="6" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="3" w="-1" h="-1" measuredW="90" measuredH="21" zOrder="0" locked="false" isInGroup="64">
+          <controlProperties>
+            <text>Over%20the%20next%20</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::TextInput" x="90" y="0" w="26" h="-1" measuredW="79" measuredH="27" zOrder="1" locked="false" isInGroup="64">
+          <controlProperties>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="123" y="3" w="-1" h="-1" measuredW="176" measuredH="21" zOrder="2" locked="false" isInGroup="64">
+          <controlProperties>
+            <text>days%2C%20randomly%20deprive%20me%20of</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::TextInput" x="1069" y="191" w="276" h="-1" measuredW="43" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Food</text>
+      </controlProperties>
+    </control>
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::TextInput" x="1069" y="233" w="276" h="-1" measuredW="85" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Hot%20showers</text>
+      </controlProperties>
+    </control>
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::Button" x="1357" y="233" w="-1" h="-1" measuredW="33" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>+</text>
+      </controlProperties>
+    </control>
+    <control controlID="68" controlTypeID="com.balsamiq.mockups::Button" x="1086" y="297" w="-1" h="-1" measuredW="242" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <state>selected</state>
+        <text>Add%20to%20my%20Google%20Calendar</text>
+      </controlProperties>
+    </control>
+    <control controlID="69" controlTypeID="__group__" x="1447" y="460" w="144" h="21" measuredW="144" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="0" w="-1" h="-1" measuredW="70" measuredH="21" zOrder="0" locked="false" isInGroup="69">
+          <controlProperties>
+            <text>Written%20by%20</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Link" x="70" y="0" w="-1" h="-1" measuredW="74" measuredH="21" zOrder="1" locked="false" isInGroup="69">
+          <controlProperties>
+            <text>Ben%20Hughes</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="74" controlTypeID="com.balsamiq.mockups::ModalScreen" x="809" y="0" w="797" h="496" measuredW="320" measuredH="240" zOrder="12" locked="false" isInGroup="-1"/>
+    <control controlID="75" controlTypeID="__group__" x="1083" y="134" w="248" h="141" measuredW="248" measuredH="141" zOrder="13" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="__group__" x="0" y="0" w="248" h="141" measuredW="248" measuredH="141" zOrder="0" locked="false" isInGroup="75">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="248" h="141" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0"/>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="172" y="104" w="-1" h="-1" measuredW="56" measuredH="27" zOrder="1" locked="false" isInGroup="0">
+              <controlProperties>
+                <text>Close</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="19" y="27" w="204" h="27" measuredW="157" measuredH="21" zOrder="1" locked="false" isInGroup="75">
+          <controlProperties>
+            <text>Adding%20items%20to%20calendar....</text>
+            <textOrientation>right</textOrientation>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="77" controlTypeID="com.balsamiq.mockups::Canvas" x="1606" y="0" w="819" h="496" measuredW="100" measuredH="70" zOrder="14" locked="false" isInGroup="-1"/>
+    <control controlID="78" controlTypeID="com.balsamiq.mockups::Title" x="1621" y="15" w="204" h="-1" measuredW="199" measuredH="50" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>DepriveMe</text>
+      </controlProperties>
+    </control>
+    <control controlID="79" controlTypeID="com.balsamiq.mockups::SubTitle" x="1654" y="65" w="422" h="-1" measuredW="411" measuredH="33" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Absence%20makes%20the%20heart%20grow%20fonder</text>
+      </controlProperties>
+    </control>
+    <control controlID="80" controlTypeID="com.balsamiq.mockups::Button" x="2356" y="15" w="53" h="27" measuredW="52" measuredH="27" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <menuIcon>false</menuIcon>
+        <state>selected</state>
+        <text>Huh%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="81" controlTypeID="com.balsamiq.mockups::TextInput" x="1873" y="149" w="284" h="-1" measuredW="61" measuredH="27" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Internet</text>
+      </controlProperties>
+    </control>
+    <control controlID="83" controlTypeID="com.balsamiq.mockups::TextInput" x="1873" y="191" w="284" h="-1" measuredW="43" measuredH="27" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Food</text>
+      </controlProperties>
+    </control>
+    <control controlID="84" controlTypeID="com.balsamiq.mockups::TextInput" x="1873" y="233" w="284" h="-1" measuredW="85" measuredH="27" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Hot%20showers</text>
+      </controlProperties>
+    </control>
+    <control controlID="85" controlTypeID="com.balsamiq.mockups::Button" x="2169" y="233" w="34" h="27" measuredW="33" measuredH="27" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>+</text>
+      </controlProperties>
+    </control>
+    <control controlID="86" controlTypeID="com.balsamiq.mockups::Button" x="1891" y="301" w="249" h="27" measuredW="242" measuredH="27" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Add%20to%20my%20Google%20Calendar</text>
+      </controlProperties>
+    </control>
+    <control controlID="88" controlTypeID="com.balsamiq.mockups::Label" x="1862" y="110" w="92" h="21" measuredW="90" measuredH="21" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Over%20the%20next%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="89" controlTypeID="com.balsamiq.mockups::TextInput" x="1954" y="107" w="27" h="-1" measuredW="79" measuredH="27" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="90" controlTypeID="com.balsamiq.mockups::Label" x="1988" y="110" w="181" h="21" measuredW="176" measuredH="21" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>days%2C%20randomly%20deprive%20me%20of</text>
+      </controlProperties>
+    </control>
+    <control controlID="91" controlTypeID="com.balsamiq.mockups::Label" x="2262" y="460" w="72" h="21" measuredW="70" measuredH="21" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Written%20by%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="92" controlTypeID="com.balsamiq.mockups::Link" x="2334" y="460" w="-1" h="-1" measuredW="74" measuredH="21" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ben%20Hughes</text>
+      </controlProperties>
+    </control>
+    <control controlID="93" controlTypeID="com.balsamiq.mockups::ModalScreen" x="1606" y="0" w="819" h="492" measuredW="320" measuredH="240" zOrder="28" locked="false" isInGroup="-1"/>
+    <control controlID="94" controlTypeID="com.balsamiq.mockups::Canvas" x="1770" y="57" w="479" h="369" measuredW="100" measuredH="70" zOrder="29" locked="false" isInGroup="-1"/>
+    <control controlID="95" controlTypeID="com.balsamiq.mockups::Paragraph" x="1785" y="78" w="449" h="296" measuredW="200" measuredH="140" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetuer%20adipiscing%20elit%2C%20sed%20diam%20nonummy%20nibh%20euismod%20tincidunt%20ut%20laoreet%20dolore%20magna%20aliquam%20erat%20volutpat.%20Ut%20wisi%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exerci%20tation%20ullamcorper%20suscipit%20lobortis%20nisl%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%20Duis%20autem%20vel%20eum%20iriure%20dolor%20in%20hendrerit%20in%20vulputate%20velit%20esse%20molestie%20consequat%2C%20vel%20illum%20dolore%20eu%20feugiat%20nulla%20facilisis%20at%20vero%20eros%20et%20accumsan%20et%20iusto%20odio%20dignissim%20qui%20blandit%20praesent%20luptatum%20zzril%20delenit%20augue%20duis%20dolore%20te%20feugait%20nulla%20facilisi.%0A%20%0ANam%20liber%20tempor%20cum%20soluta%20nobis%20eleifend%20option%20congue%20nihil%20imperdiet%20doming%20id%20quod%20mazim%20placerat%20facer%20possim%20assum.%20Typi%20non%20habent%20claritatem%20insitam%3B%20est%20usus%20legentis%20in%20iis%20qui%20facit%20eorum%20claritatem.%20Investigationes%20demonstraverunt%20lectores%20legere%20me%20lius%20quod%20ii%20legunt%20saepius.%20Claritas%20est%20etiam%20processus%20dynamicus%2C%20qui%20sequitur%20mutationem%20consuetudium%20lectorum.%20Mirum%20est%20notare%20quam%20littera%20gothica%2C%20quam%20nunc%20putamus%20parum%20claram%2C%20anteposuerit%20litterarum%20formas%20humanitatis%20per%20seacula%20quarta%20decima%20et%20quinta%20decima.%20Eodem%20modo%20typi%2C%20qui%20nunc%20nobis%20videntur%20parum%20clari%2C%20fiant%20sollemnes%20in%20futurum.</text>
+      </controlProperties>
+    </control>
+    <control controlID="96" controlTypeID="com.balsamiq.mockups::Button" x="2178" y="384" w="-1" h="-1" measuredW="56" measuredH="27" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Close</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

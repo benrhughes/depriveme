@@ -1,55 +1,64 @@
 <html>
   <head>
-  	<title>Deprive Me - Absence makes the heart grow fonder</title>
+  	<title>DepriveMe - Absence makes the heart grow fonder</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   	<script type="text/javascript" src="./underscore-min.js"></script>
+    <script type="text/javascript" src="./jqModal.js"></script>
+    <link rel="stylesheet" type="text/css" href="./jqModal.css">
    	<script type="text/javascript" src="./index.js"></script>
     <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
 
   </head>
 
   <body>
-  	<div id="title">
-  		<h2>Deprive Me</h2>
-  		<h4>Absence makes the heart grow fonder</h4>
-  		<a href="#" id="showHuh">Huh?</a>
-  	</div>
-  	<div id="data">
-  		Over next next <input type="text" id="days" value="30"/> days, randomly deprive me of:
-  		<br/>
-  		<table id="items">
-  			<thead>
-  				<th></th>
-  				<th></th>
-  			</thead>
-  			<tbody>
-  				<!-- rows dynamically added -->
-  			</tbody>
-  		</table>
-  		<button onclick="addRow()">+</button>
-    	<button id="submit" >Add to Google Calendar</button>
-   	</div>
+    <div id="content">
+    	<a href="#" id="showHuh">Huh?</a>
+      <div id="title">
+    		<h1>DepriveMe</h1>
+    		<h2>Absence makes the heart grow fonder</h2>
+    	</div>
+      
 
-    <div id="progress">
-      <div id="message"></div>
-      <a href="#" id="hideProgress">Close</a>
+    	<div id="data">
+    		Over next next <input type="text" id="days" value="30"/> days, randomly deprive me of
+    		<br/>
+        <div>
+      		<table id="items">
+      			<thead>
+      				<th></th>
+      				<th></th>
+      			</thead>
+      			<tbody>
+      				<!-- rows dynamically added -->
+      			</tbody>
+      		</table>
+      	</div>
+        <a href="#" id="submit" >Add to my Google Calendar</a>
+     	</div>
+
+      <div id="progress" class="jqmWindow">
+        <div id="message"></div>
+        <br/>
+        <a href="#" class="jqmClose button">Close</a>
+      </div>
+      
+      <div id="huh" class="jqmWindow">
+      I've been experimenting with taking 24hr breaks from the things in my life that I enjoy or 
+  		depend on. It's a great way to appreciate what I have, and to learn how to live without it.
+      	<br />
+  		DepriveMe helps me organise and randomise my days of self deprivation. It works like this:
+  		<ul>
+  			<li>You enter a list of things you'd like to take a break from. Mine includes: coffee; food;
+  				hot showers; my smartphone and music</li>
+  			<li>You specify how many days you'd want the list spread across</li>
+  			<li>If it doesn't already exist, a 'DepriveMe' calendar is created in your Google Calandar</li>
+  			<li>Each item is randomly distributed across the time period</li>
+  		</ul>
+  		<a href="#" class="jqmClose button">Close</a>
+      </div>
+      <div class="push"></div>
     </div>
-    
-    <div id="huh">
-    	For a while I've been experimenting with taking a 24hr break from the things in my life that I enjoy or 
-		depend on. I've found that it's a great way to increase my appreciation of what I have. Plus it helps me 
-		lessen my attachment to material things.
-    	<br /><br />
-		DepriveMe is a simple tool I wrote to help me keep this organised. Randomising it makes it a bit more fun, too. 
-		It works like this:
-		<ul>
-			<li>You enter a list of things you'd like to take a scheduled break from. Mine includes: coffee; food;
-				hot showers; my smartphone and music</li>
-			<li>You specify how long a period you want the list spread across</li>
-			<li>If it doesn't already exist, a 'DepriveMe' calendar is created in your Google Calandar</li>
-			<li>Each item is randomly distributed across the time period</li>
-		</ul>
-		<a href="#" id="hideHuh">Hide</a>
-    </div>
+    <div id="footer">Written by <a href="http://benrhughes.com">Ben Hughes</a></div>
   </body>
 </html>
