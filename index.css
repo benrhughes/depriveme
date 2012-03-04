@@ -15,10 +15,13 @@ input{
 	margin: 10px 0px 0px 20px;
 }
 
-#title > h2 {
-	margin: 5px 0px 20px 70px;
+h2{
 	font-size: 1em;
 	font-style: italic;
+}
+
+#title > h2 {
+	margin: 5px 0px 20px 70px;
 }
 
 #content {
