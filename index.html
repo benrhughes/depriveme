@@ -1,0 +1,68 @@
+<html>
+  <head>
+  	<title>DepriveMe - Absence makes the heart grow fonder</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  	<script type="text/javascript" src="./underscore-min.js"></script>
+    <script type="text/javascript" src="./jqModal.js"></script>
+    <link rel="stylesheet" type="text/css" href="./jqModal.css">
+   	<script type="text/javascript" src="./index.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+
+  </head>
+
+  <body>
+    <div id="content">
+    	<a href="#" id="showHuh">Huh?</a>
+      <div id="title">
+    		<h1>DepriveMe</h1>
+    		<h2>Absence makes the heart grow fonder</h2>
+    	</div>
+      
+
+    	<div id="data">
+    		Over next next <input type="text" id="days" value="30"/> days, randomly deprive me of
+    		<br/>
+        <div>
+      		<table id="items">
+      			<thead>
+      				<th></th>
+      				<th></th>
+      			</thead>
+      			<tbody>
+      				<!-- rows dynamically added -->
+      			</tbody>
+      		</table>
+      	</div>
+        <a href="#" id="submit" >Add to my Google Calendar</a>
+     	</div>
+
+      <div id="progress" class="jqmWindow">
+        <div id="message"></div>
+        <br/>
+        <a href="#" class="jqmClose button">Close</a>
+      </div>
+      
+      <div id="huh" class="jqmWindow">
+      <h2>What's all this then?</h2>
+      I've started taking 24hr breaks from the things in my life that I enjoy or 
+  		seem to depend on. It's a great way to appreciate what I have, and to learn how to live without it.
+      	<br />
+  		I wrote DepriveMe to help me organise and randomise my days of self deprivation. It works like this:
+  		<ul>
+  			<li>You enter a list of things you'd like to take a break from. Mine includes: coffee; food;
+  				hot showers; my smartphone and music</li>
+  			<li>You specify how many days you'd like the items spread across</li>
+  			<li>If it doesn't already exist, a 'DepriveMe' calendar is created in your Google Calandar</li>
+  			<li>Each item is added as an all day event on a random day within the time period</li>
+  		</ul>
+      You'll be prompted to give DepriveMe access to your Google calendar. If you'd like, after it has finished you
+      can remove access <a href="https://accounts.google.com/b/0/IssuedAuthSubTokens">here</a>.
+      <br /> <br/>
+  		<a href="#" class="jqmClose button">Close</a>
+      </div>
+      <div class="push"></div>
+    </div>
+    <div id="footer">Written by <a href="http://benrhughes.com">Ben Hughes</a></div>
+  </body>
+</html>

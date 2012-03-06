@@ -1,0 +1,93 @@
+html, body {
+	height: 100%;
+	font-family: arial,sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+input{
+	font-size: 0.9em;
+}
+
+#title > h1 {
+	margin: 10px 0px 0px 20px;
+}
+
+h2{
+	font-size: 1em;
+	font-style: italic;
+}
+
+#title > h2 {
+	margin: 5px 0px 20px 70px;
+}
+
+#content {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0px auto -4em;
+}
+
+#footer, .push {
+	height: 4em;
+	text-align: right;
+	font-size: 0.75em;
+}
+
+#showHuh{
+	float: right;
+	background-color: #00B050;
+	color: white;
+	padding: 5px 15px 5px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.75em;
+}
+
+#days{
+	width: 2.2em;
+}
+
+#data{
+	margin: auto;
+	width: 70%;
+	text-align: center;
+}
+
+#items{
+	margin: auto auto 20px auto;
+	width: 350px;
+}
+
+#items input
+{
+	width: 320px;
+	height: 2em;
+	margin: 0px 0px 5px 25px;
+}
+
+.button{
+	border: 1px solid #ddd;
+	background-color: #f2f2f2;
+	padding: 2px 5px 1px 5px;
+	color: #444;
+	text-decoration: none;
+	text-align: left;
+}
+
+#submit{
+	background-color: #4a8df8;
+	color: white;
+	padding: 10px 7px 10px 7px;
+	text-decoration: none;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+#progress{
+	width: 300px;
+	margin-left: -150px;
+}
