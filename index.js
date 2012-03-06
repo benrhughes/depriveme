@@ -123,7 +123,7 @@ function addRow(val){
 				<input type="text" class="item" value="' + (val || "") + '" /> \
 			</td> \
 			<td class="add"> \
-				<div id="addButton" class="button"><a href="#" id="addText">+</a></div> \
+				<div class="button"><a href="#">+</a></div> \
 			</td> \
 		</tr>';
 

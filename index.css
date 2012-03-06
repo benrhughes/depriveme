@@ -81,6 +81,10 @@ h2{
 	text-align: left;
 }
 
+.button a{
+	color: #444;
+}
+
 #submit{
 	background-color: #4a8df8;
 	color: white;
