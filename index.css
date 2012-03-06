@@ -33,12 +33,12 @@ h2{
 
 #footer, .push {
 	height: 4em;
-	font-size: 0.75em;
 }
 
 #info
 {
 	float: right;
+	font-size: 0.75em;
 }
 
 #showHuh{
