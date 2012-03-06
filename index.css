@@ -33,13 +33,16 @@ h2{
 
 #footer, .push {
 	height: 4em;
-	text-align: right;
 	font-size: 0.75em;
 }
 
-#showHuh{
+#info
+{
 	float: right;
-	background-color: #00B050;
+}
+
+#showHuh{
+	background-color: #007200;
 	color: white;
 	padding: 5px 15px 5px 15px;
 	text-decoration: none;
