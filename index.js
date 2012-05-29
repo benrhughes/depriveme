@@ -93,7 +93,7 @@ function addEntries(){
 		startDate.setDate(startDate.getDate() + offset);
 
 		var endDate = new Date();
-		endDate.setDate(startDate.getDate() + sessionLength);
+		endDate.setDate(endDate.getDate() + offset + sessionLength);
 
 		var params = {
 			"calendarId" : depriveCal.id,
