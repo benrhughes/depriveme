@@ -72,7 +72,8 @@ function addEntries(){
 
 	var usedOffsets = [];
 	
-	var days = parseInt(data.days);
+	var totalLength = parseInt(data.totalLength);
+	var sessionLength = parseInt(data.sessionLength);
 
 	var completed = 0;
 
@@ -80,26 +81,27 @@ function addEntries(){
 		var offset = 0;
 		
 		while (offset == 0){
-			var offset = Math.floor(Math.random()*(days+1));
+			var offset = Math.floor(Math.random()*(totalLength+1));
 
-			if (usedOffsets.indexOf(offset) != -1 && days > data.items.length) // only look for unique dates if possible
+			if ( totalLength > data.items.length && usedOffsets.indexOf(offset) != -1) // only look for unique dates if possible
 				offset = 0;
 		}
 
 		usedOffsets.push(offset);
 
-		var date = new Date();
-		date.setDate(date.getDate() + offset);
+		var startDate = new Date();
+		startDate.setDate(startDate.getDate() + offset);
 
-		var dateString = date.getFullYear() + '-' + (parseInt(date.getMonth())+1) + '-' + date.getDate();
+		var endDate = new Date();
+		endDate.setDate(startDate.getDate() + sessionLength);
 
 		var params = {
 			"calendarId" : depriveCal.id,
 			"resource": 
 			{
 				"summary": data.items[i],
-				"start": {"date": dateString},
-				"end": {"date": dateString}
+				"start": {"date": GetDateString(startDate)},
+				"end": {"date": GetDateString(endDate)}
 			}
 		};
 	
@@ -115,7 +117,10 @@ function addEntries(){
 	};
 }
 
-
+function GetDateString(date)
+{
+	return date.getFullYear() + '-' + (parseInt(date.getMonth())+1) + '-' + date.getDate();
+}
 function addRow(val){
 	var rowHtml = '\
 		<tr> \
@@ -137,7 +142,8 @@ function addRow(val){
 
 function getFormData(){
 	var data = {};
-	data.days = $('#days').val();
+	data.totalLength = $('#totalLength').val();
+	data.sessionLength = $('#sessionLength').val();
 	data.items = []
 
 	$('.item').each(function(i){
